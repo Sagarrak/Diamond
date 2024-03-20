@@ -1,0 +1,38 @@
+.jwellery-dynamic-wrap {
+    .head-content {
+        max-width: 400px !important;
+        line-height: 64px;
+        margin: 0 auto;
+    }
+    .lab-diamond-tab-wrap {
+        border: 0.6px solid #000;
+    }
+    .lab-diamond-tab {
+        padding: 30px;
+        height: 100%;
+        // display: block !important;
+    }
+    .lab-diamond-tab1 {
+        max-width: 150px;
+        margin: 0 auto;
+    }
+    .text-decoration {
+        text-decoration: underline;
+    }
+    .open-tab {
+        background-color: #656565;
+        p {
+            color:  #fff !important;
+        }
+        svg {
+            filter:  brightness(0) invert(1);
+        }
+    }
+    .tab-content {
+        .tab-inner-content{
+            font-size: 40px;
+            max-width: 600px;
+        }
+
+    }
+}

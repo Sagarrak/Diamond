@@ -1,0 +1,220 @@
+@import "../../scss/variable.scss";
+
+.dottedText {
+    // width: 50%;
+    text-overflow: ellipsis;
+    // overflow-x: hidden;
+    white-space: nowrap;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    margin-top: 3px;
+}
+
+.description {
+    width: 400px;
+}
+
+.blog-card {
+    padding: 20px;
+    // box-shadow: none;
+    background-color: #fff;
+    height: 100%;
+
+    @media (max-width:400px) {
+        padding: 12px 12px 35px;
+    }
+
+    .card-body {
+        // padding: 25px 0 0 0;
+        padding: 13px 0 0 10px;
+
+        @media (max-width:338px) {
+            padding: 13px 0 16px 10px;
+        }
+    }
+}
+
+.text-sm-content {
+    margin: 0px 0 15px;
+}
+
+.card-img,
+.card-img-top {
+    border-radius: 0;
+}
+
+.card-img-top {
+    max-height: 230px;
+    height: 100%;
+    padding: 10px;
+}
+
+.pagination-list {
+    display: flex;
+    padding-left: 0;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width:991px) {
+        padding-bottom: 2rem !important;
+    }
+
+    @media (max-width:525px) {
+        padding-top: 2rem !important;
+        padding-bottom: 1rem !important;
+    }
+
+    li {
+        list-style: none;
+        margin-right: 25px;
+
+        @media screen and (max-width: 768px) {
+            margin-right: 16px;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+
+        &.selected {
+            background: $dark_grey;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                color: #fff !important;
+            }
+        }
+
+        a {
+            // font-family: $fontfamily;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            color: #2b1f0c;
+        }
+    }
+}
+
+.title {
+    font-family: "OutfitRegular";
+    font-weight: 600;
+    color: #000 !important;
+}
+
+.date {
+    font-size: 11px;
+}
+
+//blog page
+
+.product-desc-title {
+    font-family: 'OutfitRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+
+    a {
+        color: #A9A9A9 !important;
+        font-weight: 100;
+        font-family: 'OutfitThin';
+    }
+}
+
+.blog {
+    .blogInfo {
+        .blogtitle {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 24px;
+            letter-spacing: 0.08em;
+            color: #212121;
+            margin-bottom: 15px;
+        }
+
+        .blogConetent {
+            p {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 19px;
+                line-height: 24px;
+                // color: #656565;
+                color: black;
+                font-family: 'Outfit';
+                margin-bottom: 15px;
+            }
+
+            h3 {
+                font-style: normal;
+                line-height: 32px;
+                letter-spacing: 0.5px;
+                color: #434343;
+            }
+
+            img {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+// blogs page header option
+.Blogpage {
+    padding: 200px 0 0;
+
+    @media (max-width:1024px) {
+        padding: 200px 0 ;
+    }
+
+    @media (max-width:575px) {
+        padding: 200px 0;
+    }
+
+    @media (max-width:421px) {
+        padding: 200px 0;
+    }
+
+    @media (max-width:399px) {
+        padding: 200px 0;
+    }
+
+    .blogs {
+        .card-body {
+            h5 {
+                letter-spacing: 2px;
+                line-height: 33px;
+                margin-bottom: 5px;
+
+                @media (max-width:338px) {
+                    font-size: 19px;
+                }
+            }
+
+            p {
+                font-size: 18px;
+                color: #A9A9A9;
+                margin: 0px 0 27px;
+                letter-spacing: 0.9px;
+                line-height: 32px;
+
+                @media (max-width:338px) {
+                    line-height: 31px;
+                    font-size: 17px;
+                }
+            }
+
+            .btn-sm {
+                font-size: 16px !important;
+                padding: 12px 37px !important;
+            }
+        }
+    }
+}

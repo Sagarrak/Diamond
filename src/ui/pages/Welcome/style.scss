@@ -1,0 +1,55 @@
+.background-img {
+    background-image: url(../../../assets//images//images//welcome.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+
+    .main-logo {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @media (max-width:768px) {
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+
+        h2 {
+            color: white;
+            font-size: 24px;
+        }
+    }
+
+    .button-div {
+        display: flex;
+        justify-content: space-between;
+        top: 90%;
+        left: 50%;
+        width: 100%;
+        max-width: 1020px;
+        margin: 0 auto;
+        transform: translate(-50%, -90%);
+
+        @media (max-width:1024px) {
+            max-width: 700px;
+        }
+
+        @media (max-width:576px) {
+            max-width: 400px;
+        }
+
+        .common-button {
+            @media (max-width:1024px) {
+                padding: 14px 22px !important;
+                font-size: 12px !important;
+            }
+
+            @media (max-width:768px) {
+                padding: 15px 13px !important;
+            }
+        }
+    }
+}

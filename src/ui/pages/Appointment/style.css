@@ -1,0 +1,202 @@
+.p-head {
+  font-size: 16px;
+  width: 600px;
+  margin: 0px auto;
+  line-height: 35px !important;
+  text-align: center;
+}
+
+@media (max-width: 990px) {
+  h1 {
+    font-size: 40px !important;
+  }
+  .input-filed,
+  .date-time-input-filed,
+  .comment-input-filed {
+    margin: 12px auto !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: "OutfitThin"  !important;
+    color: black !important;
+    font-weight: 600 !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .p-head {
+    width: 300px;
+  }
+}
+
+.date-time-input-filed {
+  border: 1px solid #5c5d5f;
+  border-radius: 0px;
+  max-width: 200px !important;
+  padding: 20px 24px;
+  margin: 0 auto;
+  margin: 12px 0px !important;
+}
+
+.comment-input-filed {
+  border: 1px solid #5c5d5f;
+  border-radius: 0px;
+  width: 100%;
+  padding: 20px 24px;
+  margin: 25px auto;
+  font-family: "OutfitThin"  !important;
+  color: black !important;
+  font-weight: 600 !important;
+}
+
+.comment-input-filed::-webkit-input-placeholder {
+  font-family: "OutfitThin"  !important;
+  color: #656565;
+}
+
+.comment-input-filed:-ms-input-placeholder {
+  font-family: "OutfitThin"  !important;
+  color: #656565;
+}
+
+.comment-input-filed::-ms-input-placeholder {
+  font-family: "OutfitThin"  !important;
+  color: #656565;
+}
+
+.comment-input-filed::placeholder {
+  font-family: "OutfitThin"  !important;
+  color: #656565;
+}
+
+.location-div {
+  border-top: 1px solid #8da385;
+  margin: 82px 0px;
+  padding: 60px 0px;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  height: 511px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+  height: 511px;
+}
+
+.gmap_iframe {
+  height: 511px !important;
+}
+
+.date-time .form-control,
+.react-tel-input .form-control {
+  padding: 0 !important;
+  border: none !important;
+  height: 17px;
+}
+
+.react-tel-input .form-control {
+  padding-left: 40px !important;
+  outline: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px 0 0 3px;
+  border: 0;
+}
+
+.react-tel-input.input-filed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.react-tel-input .special-label {
+  display: none;
+}
+
+.react-tel-input .flag-dropdown {
+  border: 0 !important;
+  background-color: #fff !important;
+}
+
+.react-tel-input .arrow {
+  display: none;
+}
+
+.react-tel-input .form-control {
+  height: 21px !important;
+}
+
+.form-control:focus:valid,
+.form-control:focus.is-valid {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.flat-picker-row {
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+}
+
+.flat-picker {
+  width: 48% !important;
+  margin: 0;
+}
+
+.flat-picker::-webkit-input-placeholder {
+  color: black !important;
+}
+
+.flat-picker:-ms-input-placeholder {
+  color: black !important;
+}
+
+.flat-picker::-ms-input-placeholder {
+  color: black !important;
+}
+
+.flat-picker::placeholder {
+  color: black !important;
+}
+
+.form-control:disabled, .form-control[readonly] {
+  background: transparent;
+}
+
+input.input-filed.form-control::-webkit-input-placeholder {
+  color: black !important;
+}
+
+input.input-filed.form-control:-ms-input-placeholder {
+  color: black !important;
+}
+
+input.input-filed.form-control::-ms-input-placeholder {
+  color: black !important;
+}
+
+input.input-filed.form-control::placeholder {
+  color: black !important;
+}
+
+.form-control[readonly] {
+  opacity: 1 !important;
+}
+
+textarea.form-control {
+  padding: 18px 25px !important;
+}
+
+.contact-detail {
+  margin-top: 200px;
+}
+/*# sourceMappingURL=style.css.map */

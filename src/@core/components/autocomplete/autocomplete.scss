@@ -1,0 +1,314 @@
+// Component: Autocomplete
+// ========================================================================
+
+// ** Base Styles Imports
+@import '../../scss/base/bootstrap-extended/include';
+@import '../../scss/base/components/include';
+
+$autocomplete-active-color: #f1f1f1;
+
+.autocomplete-container {
+  position: relative;
+  margin-right: 32px;
+
+  @media (max-width: 1322px) {
+    margin-right: 18px;
+  }
+
+  @media (max-width : 1170px) {
+    margin-bottom: 10px;
+  }
+
+  @media (max-width : 1125px) {
+    width: 85% !important;
+  }
+
+  @media (max-width : 955px) {
+    width: 83% !important;
+  }
+
+  @media (max-width : 883px) {
+    width: 81% !important;
+  }
+
+  @media (max-width :769px) {
+    width: 79% !important;
+  }
+
+  @media (max-width :695px) {
+    width: 76% !important;
+  }
+
+  @media (max-width :617px) {
+    width: 72% !important;
+  }
+
+  @media (max-width :543px) {
+    width: 69% !important;
+  }
+
+  @media (max-width :485px) {
+    width: 66% !important;
+  }
+
+  @media (max-width :429px) {
+    width: 100% !important;
+  }
+
+  .autocomplete-search {
+    height: 100%;
+    border-radius: 0px;
+    min-height: 44px;
+    // width: 368px;
+    // width: 100%;
+    background-color: $white;
+
+    @media (max-width : 1330px) {
+      padding-right: 0px;
+      margin-right: 0px !important;
+    }
+
+    & :focus {
+      outline: 1px solid #CBCBCB !important;
+      box-shadow: none !important;
+    }
+
+    &::placeholder {
+      @media (max-width:470px) {
+        font-size: 12px;
+      }
+    }
+  }
+
+  &:before {
+    content: url('../../../assets/images/icons/search-icon.png');
+    position: absolute;
+    // margin: 10px;
+    margin: 11px 11px 7px 17px;
+  }
+
+
+
+  .suggestions-list {
+    z-index: 998;
+    list-style: none;
+    padding-left: 0;
+    border-radius: 0.5rem;
+    max-height: 450px;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    margin-top: 0.5rem;
+    list-style-type: none;
+    background-color: $white;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+
+    .suggestion-item {
+      padding: 0.9rem 1rem;
+      color: $body-color;
+      line-height: 1 !important;
+
+      a {
+        color: $body-color;
+      }
+
+      &.suggestion-title {
+        font-size: 0.85rem;
+        color: $text-muted;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        margin-top: 0.75rem;
+        margin-bottom: 0;
+      }
+
+      &.active,
+      &:hover:not(.suggestion-title-wrapper):not(.no-result) {
+        background-color: $autocomplete-active-color;
+        color: $body-color;
+      }
+
+      &:hover:not(.suggestion-title-wrapper):not(.no-result) {
+        cursor: pointer;
+      }
+    }
+
+    &.open-up {
+      top: auto;
+      bottom: 100%;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+// Dark
+.dark-layout {
+  .autocomplete-container {
+    .suggestions-list {
+      background-color: $theme-dark-card-bg;
+
+      .suggestion-item {
+        color: $theme-dark-body-color !important;
+
+        &.suggestion-title-wrapper {
+          color: $theme-dark-text-muted-color;
+        }
+
+        &:not(.suggestion-title-wrapper) {
+
+          &.active,
+          &:hover {
+            background-color: $theme-dark-body-bg !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+// More Filters 
+
+.modal {
+  .modal-filters {
+    max-width: 1028px !important;
+    margin: 2rem auto !important;
+
+    .modal-header {
+      background-color: white;
+      padding: 0.8rem 1.4rem 0rem;
+
+      .btn-close {
+        box-shadow: none !important;
+        // padding: 2rem 2rem !important;
+        padding: 1.5rem 1.5rem !important;
+        transform: translate(0, 0);
+
+        @media (max-width:300px) {
+          padding: 1rem 2rem !important;
+        }
+      }
+    }
+
+    hr {
+      margin: 0.5rem 0 1rem;
+    }
+
+    .modal-body {
+      @media (max-width:400px) {
+        padding: 0rem 0.4rem;
+      }
+    }
+
+    p {
+      // font-family: 'Outfit';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22.6568px;
+      line-height: 29px;
+      color: #434343;
+      font-family: 'OutfitRegular';
+    }
+
+    .fileter-class {
+      display: flex;
+
+      @media (max-width:425px) {
+        display: block;
+      }
+    }
+
+    .border-css {
+      border: 2px solid black;
+    }
+
+    .filter-card {
+      background: #FFFFFF;
+      // box-shadow: 0px 2.55996px 10.2398px rgb(0 0 0 / 8%);
+      // padding: 8px 5px;
+      // border: 1px solid red;
+      margin: 15px 10px 16px 15px;
+      width: 350px;
+      height: 110px;
+
+      @media (max-width:778px) {
+        height: 280px;
+      }
+
+      @media (max-width:576px) {
+        height: 215px;
+      }
+
+      @media (max-width:320px) {
+        height: 230px;
+      }
+
+      .filter-header {
+        padding: 0 20px 0 0;
+
+        p {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 29px;
+          color: #434343;
+          text-transform: capitalize;
+          padding: 10px 15px 10px 10px;
+
+          @media (max-width:400px) {
+            padding: 0px 0px 0px 10px;
+            font-size: 18px;
+          }
+        }
+
+      }
+
+      .otherData {
+        padding-top: 1px;
+
+        .listed-box {
+          .check-boxs {
+            font-size: 15.9197px;
+            line-height: 23px;
+            letter-spacing: 0.05em;
+            // font-family: "Outfit";
+            font-family: 'OutfitRegular';
+            font-style: normal;
+            font-weight: 400;
+            text-transform: capitalize;
+            padding: 0 0 10px 30px;
+
+            @media (max-width:400px) {
+              font-size: 14.9197px;
+            }
+          }
+        }
+
+        .filter-diamond {
+          p {
+            padding: 0 0 25px 10px;
+            // font-family: 'Outfit';
+            font-family: 'OutfitThin';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14.8px;
+            line-height: 25px;
+            color: #9B9B9B;
+            margin-bottom: 5rem;
+
+            // @media (max-width:280px) {
+            //   margin-bottom: 2rem;
+            // }
+          }
+        }
+      }
+    }
+
+    .checkBoxs-card {
+      @media (max-width:576px) {
+        height: 280px;
+      }
+    }
+
+  }
+
+
+}

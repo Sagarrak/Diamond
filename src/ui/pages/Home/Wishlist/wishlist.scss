@@ -1,0 +1,135 @@
+@import "../../../scss/variable.scss";
+@import "../../../scss/common.scss";
+
+.modal-slide-in {
+    .wishlist-object-img {
+        height: 100%;
+        object-fit: cover;
+        max-width: 100%;
+    }
+
+    .add-bag {
+        font-family: "OutfitBold";
+    }
+
+
+    .modal-dialog {
+        width: 32rem !important;
+
+        @media (max-width: 448px) {
+            width: 25rem !important;
+        }
+
+        @media (max-width:350px) {
+            width: 20rem !important;
+        }
+
+        .modal-content {
+            .wishlist-overflow {
+                padding: 30px 30px 10px 30px;
+
+                .data {
+                    @media (max-width:350px) {
+                        display: block !important;
+                    }
+                }
+            }
+
+            p {
+                @media (max-width:300px) {
+                    font-size: 17px;
+                }
+            }
+
+            .cart-data {
+                overflow: auto;
+
+                .cart-overflow {
+                    max-height: calc(100vh - 253px);
+                    padding: 30px;
+
+                    .data {
+                        @media (max-width:350px) {
+                            display: block !important;
+                        }
+                    }
+                }
+
+                .wishlist-data-img {
+                    max-width: 130px;
+                    max-height: 130px;
+
+                    @media (max-width:448px) {
+                        max-height: 115px;
+                    }
+
+                    @media (max-width:350px) {
+                        margin: 0 auto;
+                    }
+                }
+
+                .otherInfo {
+                    line-height: 30px;
+                    padding-left: 1.8rem;
+                    color: #434343;
+                    font-weight: 900;
+
+                    @media (max-width:448px) {
+                        padding-left: 1.5rem;
+                    }
+
+                    @media (max-width:350px) {
+                        margin-top: 18px;
+                        padding-left: 0rem !important;
+                    }
+
+                    .ogg-regular {
+                        @media (max-width:350px) {
+                            justify-content: center;
+                            margin-bottom: -15px;
+                        }
+                    }
+
+                    .single_productDetails {
+                        @media (max-width:350px) {
+                            justify-content: center;
+                        }
+                    }
+
+                    .single_product {
+                        @media (max-width:350px) {
+                            text-align: center;
+                        }
+                    }
+
+                    .wishlist-product-content {
+                        color: $primary;
+                        font-weight: 500;
+                    }
+
+                    .price {
+                        @media (max-width:448px) {
+                            margin-block: 7px;
+                        }
+
+                        @media (max-width:350px) {
+                            justify-content: center;
+                            display: flex !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .cart-bottom {
+            padding: 20px 30px;
+            border-top: 1px solid #ccc;
+            background-color: #fff;
+        }
+    }
+}
+
+.disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}

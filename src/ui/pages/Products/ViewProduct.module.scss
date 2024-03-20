@@ -1,0 +1,54 @@
+.productDetails {
+    video,
+    img {
+        width: 300px;
+    }    
+}
+.heading {
+    font-size: 45px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    color: #434343;
+    font-weight: 600;
+}
+.subHeading{
+    font-size: 20px;
+    font-weight: 400 !important;
+    color: #434343 !important;
+    font-family: "OutfitRegular" !important;
+}
+.data {
+    max-width: 739px;
+    display: flex;
+    justify-content: space-between;
+    padding: 13px;
+    background-color: #F2F2F2;
+    margin-bottom: 24px;
+}
+.productPara {
+    font-family: "Outfitregular" !important;
+    max-width: 220px;
+    width: 100%;
+    font-weight: 800 !important;
+    letter-spacing: 1px;
+    text-align: left;
+    font-size: 17px !important;
+    line-height: 1.5rem;
+}
+.productText{
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    font-family:"OutfitThin" !important;
+    white-space: nowrap;
+}
+.otherDetails{
+    margin-left: 40px;
+}
+.description{
+    color: #434343;
+    font-weight: 800 !important;
+    font-family: "outfitThin" !important;
+}
+.caratsInput {
+    width: 270px;
+}

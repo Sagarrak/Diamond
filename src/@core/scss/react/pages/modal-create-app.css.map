@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACCA,AAGM,kBAHY,AACf,SAAS,CACR,OAAO,AACJ,WAAW,CAAC;EACX,UAAU,EAAE,IAAI;EAChB,SAAS,EAAE,IAAI;CAIhB;;AATP,AAMQ,kBANU,AACf,SAAS,CACR,OAAO,AACJ,WAAW,CAGV,GAAG,CAAC;EACF,aAAa,EAAE,CAAC;CACjB;;ADPT,AACE,WADS,AAAA,kBAAkB,CAC3B,kBAAkB,CAAC,KAAK,CAAC,aAAa,CAAC;EACrC,WAAW,EAAE,OAAO;EACpB,cAAc,EAAE,OAAO;CACxB",
+    "sources": [
+        "modal-create-app.scss",
+        "../../base/pages/modal-create-app.scss"
+    ],
+    "names": [],
+    "file": "modal-create-app.css"
+}

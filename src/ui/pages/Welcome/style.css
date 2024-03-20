@@ -1,0 +1,65 @@
+.background-img {
+  background-image: url(../../../assets//images//images//welcome.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.background-img .main-logo {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .background-img .main-logo {
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+.background-img .main-logo h2 {
+  color: white;
+  font-size: 24px;
+}
+
+.background-img .button-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  top: 90%;
+  left: 50%;
+  width: 100%;
+  max-width: 1020px;
+  margin: 0 auto;
+  -webkit-transform: translate(-50%, -90%);
+          transform: translate(-50%, -90%);
+}
+
+@media (max-width: 1024px) {
+  .background-img .button-div {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 576px) {
+  .background-img .button-div {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .background-img .button-div .common-button {
+    padding: 14px 22px !important;
+    font-size: 12px !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

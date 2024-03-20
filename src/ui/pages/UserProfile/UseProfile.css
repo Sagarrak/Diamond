@@ -1,0 +1,75 @@
+.my-profile {
+  margin-top: 75px;
+}
+
+.my-profile img {
+  margin: 16px 0px;
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+}
+
+.my-profile .edit-link {
+  font-size: 15px !important;
+  color: #8DA385 !important;
+  text-decoration: underline !important;
+  cursor: pointer;
+  background-color: transparent !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0px;
+}
+
+.input-label {
+  font-size: 15px !important;
+  color: #A9A9A9 !important;
+}
+
+.profile-input-filed {
+  border: 1px solid #5c5d5f;
+  border-radius: 0px;
+  padding: 15px 10px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.accordion-input {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .accordion-input {
+    width: 100%;
+  }
+}
+
+.accordion-input:first-child {
+  padding-right: 4rem;
+}
+
+@media (max-width: 768px) {
+  .accordion-input:first-child {
+    padding-right: 0rem;
+  }
+}
+
+.accordion-input:last-child {
+  border-left: 1px solid #5C5D5F;
+  padding-left: 4rem;
+}
+
+@media (max-width: 768px) {
+  .accordion-input:last-child {
+    padding-left: 0rem;
+    border-left: none;
+  }
+}
+
+.accordion-input .accordion-body {
+  padding: 0;
+}
+
+.save-btn-wrap {
+  margin-left: 620px;
+}
+/*# sourceMappingURL=UseProfile.css.map */

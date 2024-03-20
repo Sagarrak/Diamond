@@ -1,0 +1,14 @@
+@import "../../scss/variable.scss";
+@import "../../scss/common.scss";
+
+.footer-bottom {
+
+    position: fixed;
+    bottom: 0 !important;
+    width: 100%;
+    margin-top: 100px;
+    z-index: 99;
+    p {
+        font-size: 15px;
+    }
+}

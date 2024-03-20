@@ -1,0 +1,231 @@
+@import "../scss/variable.scss";
+
+// ========================== Login Page Design Starts Here ==========================
+.form-wrap {
+    max-width: 400px;
+    margin: 0 auto;
+
+    @media (max-width:768px) {
+        padding: 0 30px;
+    }
+}
+
+.input-filed {
+    border: 1px solid #5c5d5f !important;
+    border-radius: 0px !important;
+    // max-width: 413px !important;
+    padding: 18px 25px !important;
+    margin: 0 auto;
+    width: 100%;
+
+    @media (max-width:540px) {
+        padding: 13px 25px !important;
+    }
+}
+
+input[type=password] {
+    @media (max-width:393px) {
+        margin-top: -4px;
+    }
+}
+
+.auth-form {
+    // height: calc(100vh - 60px);
+    padding-top: 160px;
+
+    @media (max-width:991px) {
+        padding-top: 110px;
+    }
+
+    @media (max-width:389px) {
+        padding-top: 70px;
+    }
+}
+
+// .input-filed::placeholder {
+//     font-family: "OutfitThin"  !important;
+//     color: red !important;
+//     font-weight: 700;
+// }
+
+.login-container {
+    padding-right: 100px;
+    border-right: 2px solid #000000;
+
+    @media (max-width: 1024px) {
+        padding-right: 0;
+    }
+}
+
+.signup-container {
+    padding-left: 100px;
+}
+
+.forgot-link {
+    background-color: transparent !important;
+    border: 0px;
+    box-shadow: none !important;
+    color: $black !important;
+    // font-size: 16px !important;
+    text-decoration: underline !important;
+}
+
+.login-txt {
+    max-width: 380px;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.login-side {
+    border-right: 1px solid #000000;
+}
+
+@media (max-width: "990px") {
+    .login-side {
+        border: none;
+    }
+}
+
+.signUp-side {
+    border-right: 1px solid #000000;
+}
+
+@media (max-width: "767px") {
+    .signUp-side {
+        border: none;
+    }
+}
+
+.sign_text {
+    font-weight: 200;
+    text-align: center;
+    padding-bottom: 70px;
+    max-width: 549px;
+    margin: 0 auto;
+
+    @media (max-width:553px) {
+        padding-bottom: 50px;
+    }
+
+    @media (max-width:425px) {
+        padding-bottom: 38px;
+        padding-inline: 30px;
+    }
+
+    h1 {
+        color: #434343 !important;
+        font-size: 1.9rem;
+
+    }
+}
+
+.sign_btn {
+    margin-top: 55px;
+
+    @media (max-width:768px) {
+        margin-top: 31px;
+    }
+
+    .common-button {
+        @media (max-width:768px) {
+            padding: 11px 25px !important;
+        }
+    }
+}
+
+//forget password page model
+.forgot {
+    .modal-dialog {
+        max-width: 560px !important;
+
+        &.forgot {
+            margin: 18rem auto;
+            border-radius: 0px;
+
+            .modal-content {
+                border-radius: 0px;
+
+                .forgot-password {
+                    div {
+                        @media (max-width:415px) {
+                            margin: 10px !important;
+                        }
+
+                        @media (max-width:300px) {
+                            margin: 0px !important;
+                        }
+                    }
+
+                    .head-bold {
+                        font-size: 40px !important;
+                        color: #434343 !important;
+
+                        @media (max-width:576px) {
+                            font-size: 35px !important;
+                            line-height: 37px !important;
+                        }
+                    }
+
+                    p {
+                        font-size: 16px !important;
+                        line-height: 23px !important;
+                        color: #808080 !important;
+                        font-weight: 300 !important;
+                        margin-bottom: 30px !important;
+
+                        @media (max-width:576px) {
+                            max-width: 100%;
+                            margin-bottom: 24px !important;
+                            font-size: 15px !important;
+                            line-height: 21px !important;
+                        }
+                    }
+                }
+
+            }
+
+            .input-filed {
+                padding: 12px 25px !important;
+
+                @media (max-width:300px) {
+                    padding: 6px 20px !important;
+                }
+            }
+
+            .common-button {
+                font-size: 17px !important;
+                padding: 12px 50px !important;
+
+                @media (max-width:576px) {
+                    margin-top: 0px !important;
+                }
+            }
+
+            .forgot-link {
+                letter-spacing: 0.9px;
+            }
+        }
+    }
+}
+.eye{
+    display: flex;
+    width: 100%;
+}
+.eye-password{
+    width: 100%;
+    border-right-style: none;
+
+}
+.eye-pass{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left-style :none;
+    width: 30%;
+    cursor: pointer;
+}
+
+// ========================== Login Page Design Ends Here ==========================

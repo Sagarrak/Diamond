@@ -1,0 +1,45 @@
+.order-view-modal {
+    min-width: 900px !important;
+}
+
+
+
+.info {
+    .card {
+        width: 100%;
+
+        h2 {
+            text-align: left;
+            border-bottom: 1px solid #e1e1e1;
+            padding: 0 0 5px 0;
+            margin-bottom: 5px;
+            font-weight: 500;
+            font-family: "OutfitRegular";
+        }
+
+        .details {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+
+            p {
+                text-align: start;
+                font-family: "OutfitThin" !important;
+                font-size: 17px;
+
+                span {
+                    &:nth-child(1) {
+                        font-weight: 600;
+                    }
+
+                    &:nth-child(2) {
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+
+    }
+}

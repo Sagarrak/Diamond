@@ -1,0 +1,108 @@
+@import "../../scss/variable.scss";
+@import "../../scss/common.scss";
+
+.wishlist-page {
+
+    header {
+        max-width: 1439px !important;
+        width: 100%;
+    }
+
+    .wish-list-col {
+        padding-top: 250px;
+
+        @media (max-width:768px) {
+            padding-top: 100px;
+
+        }
+
+        .container {
+            max-width: 1469px !important;
+
+            .product-desc-title {
+                letter-spacing: 0.4px;
+            }
+        }
+    }
+
+    .wishlist-head {
+        h1 {
+            font-size: 48px;
+            color: black;
+
+            @media (max-width:768px) {
+                font-size: 30px;
+                margin-top: 25px;
+            }
+
+            @media (max-width:428px) {
+                margin-top: 45px;
+            }
+        }
+
+        p {
+            font-size: 19px;
+
+            @media (max-width:768px) {
+                margin-top: 0.5rem !important;
+            }
+        }
+    }
+
+    .wishlist-items {
+        margin-top: 50px;
+        margin-bottom: 70px;
+
+        @media (max-width:1440px) {
+            flex-wrap: wrap !important;
+        }
+
+        .ecommerce-card {
+            background-color: #FFFFFF;
+            padding: 13px 10px 45px;
+            box-shadow: none;
+            border: 1px solid #CBCBCB;
+            border-radius: 0px;
+            max-width: 330px;
+            width: 100%;
+
+            @media (max-width:576px) {
+                max-width: 300px !important;
+                margin: 0 auto;
+            }
+
+            .btn-light {
+                color: $primary;
+                background-color: transparent;
+                border-color: transparent;
+                padding: 0;
+                margin-bottom: 10px
+            }
+
+            .item-img {
+                max-width: 200px;
+                min-height: 0 !important;
+                padding-top: 0 !important;
+
+            }
+
+        }
+
+    }
+
+}
+.history-wrap{
+    padding-top: 200px;
+    @media (max-width:768px) {
+        padding-top: 150px !important;
+    }
+    @media (max-width: 576px) {
+        padding-top: 0px !important;
+    }
+}
+.no-product {
+    letter-spacing: 1px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}

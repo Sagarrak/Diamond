@@ -1,0 +1,98 @@
+@import "../../scss/variable.scss";
+
+.footer {
+    .footer-logo {
+        @media (max-width:768px) {
+            max-width: 200px;
+            margin: 0 auto;
+        }
+    }
+
+    .get-in-text {
+        // max-width: 280px;
+        text-align: center;
+        color: #434343;
+        line-height: 23px;
+        padding: 0 3px;
+        font-size: 16px;
+
+        @media (max-width:991px) {
+            text-align: center !important;
+            letter-spacing: 1.1px;
+            margin-inline: 20px;
+            font-size: 18px;
+        }
+
+        @media (max-width:768px) {
+            font-size: 16px;
+        }
+
+        @media (max-width:300px) {
+            font-size: 14px;
+        }
+    }
+
+    .footer-icon {
+        width: 45px;
+        height: 45px;
+        background-color: #EDEDED;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        line-height: 25px;
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    li {
+        a {
+            color: $white !important;
+            font-size: 19px;
+
+            @media (max-width: 1372px) {
+                font-size: 16px;
+            }
+
+        }
+    }
+
+}
+
+.contact-us {
+    @media (max-width: 1372px) {
+        padding-left: 0rem !important;
+    }
+}
+
+.mail-box {
+    @media (max-width:576px) {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .mail-box-submit {
+        max-width: 200px;
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+
+        @media (max-width:992px) {
+            margin-top: 2rem;
+        }
+
+        @media (max-width:489px) {
+            margin-top: 1rem;
+        }
+
+        @media (max-width:300px) {
+            margin-top: 0.5rem;
+            margin-bottom: 2rem !important;
+            padding: 7px;
+            font-size: 14px;
+        }
+    }
+}

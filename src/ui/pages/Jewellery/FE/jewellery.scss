@@ -1,0 +1,499 @@
+@import "../../../scss//variable.scss";
+
+.jewellery-BannerImg {
+    background-image: url("../../../../assets/images/banner/home-banner-img.png");
+    padding-top: 0.1px;
+    width: 100%;
+    background-size: cover;
+    background-color: #fff;
+    position: relative;
+
+    @media (max-width:1558px) {
+        background-size: contain;
+    }
+}
+
+.jewellery {
+    // max-width: 800px;
+    // margin: 0 auto;
+    margin: 210px auto 160px;
+    // height: calc(100vh - 90px);
+    // padding-top: 300px;
+
+    h1 {
+        font-size: 50px;
+        // font-family: 'ButtlerRegular';
+
+        @media (max-width:768px) {
+            font-size: 40px;
+        }
+
+        @media (max-width:300px) {
+            font-size: 38px;
+        }
+    }
+
+    p {
+        font-size: 18px;
+        color: #656565;
+        letter-spacing: 1px;
+
+        @media (max-width:768px) {
+            font-size: 15px;
+        }
+
+        @media (max-width:300px) {
+            font-size: 14px;
+        }
+    }
+
+    .notify-input {
+        display: flex;
+        min-width: 722px;
+        margin-top: 40px !important;
+
+        input {
+            padding: 10px 20px;
+            border: 1px solid $primary_border;
+            border-radius: 0;
+            background-color: #F7F7F7;
+
+            &::placeholder {
+                color: $primary;
+                font-size: 16px;
+                letter-spacing: 1px;
+
+                @media (max-width:768px) {
+                    font-size: 14px;
+                }
+            }
+
+            @media (max-width:300px) {
+                padding: 8px 20px;
+            }
+        }
+
+        .common-button {
+            margin-left: 30px;
+            font-size: 16px !important;
+
+            @media (max-width:786px) {
+                font-size: 14px !important;
+                padding: 11px 35px !important;
+                margin: 30px auto;
+            }
+
+            @media (max-width:300px) {
+                padding: 8px 35px !important;
+                margin: 23px auto;
+            }
+        }
+
+        span {
+            width: 30%;
+        }
+
+        @media (max-width:992px) {
+            margin-top: 30px !important;
+        }
+
+        @media (max-width:786px) {
+            display: block;
+            min-width: 600px;
+        }
+
+        @media (max-width:662px) {
+            min-width: 500px;
+        }
+
+        @media (max-width:554px) {
+            min-width: 400px;
+        }
+
+        @media (max-width:448px) {
+            min-width: 300px;
+        }
+
+        @media (max-width:352px) {
+            min-width: 230px;
+        }
+
+        @media (max-width:300px) {
+            margin-top: 22px !important;
+        }
+    }
+
+    @media (max-width:912px) {
+        margin: 200px auto 110px;
+    }
+
+    @media (max-width:812px) {
+        margin: 173px auto 29px;
+    }
+
+    @media (max-width:552px) {
+        margin: 129px auto 29px;
+    }
+
+    @media (max-width:350px) {
+        margin: 138px auto 30px;
+    }
+}
+
+.content-text {
+    font-size: 44px !important;
+    font-weight: 600 !important;
+    color: #212121 !important;
+}
+
+.content-img-text {
+    font-size: 30px;
+    right: 25px;
+    top: 80px;
+}
+
+.content-img-text2 {
+    bottom: 80px !important;
+    font-size: 30px;
+    right: 25px;
+}
+
+.content-img-text,
+.content-img-text2 {
+    .outline-btn {
+        border-radius: 6px;
+        border: 0.11111px solid #a3a0a0;
+        color: #FFF;
+        font-size: 16.3px;
+        font-weight: 300;
+        padding: 13px 55px;
+        background-color: transparent;
+    }
+
+    h5 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 15.5px;
+        color: #D7D7D7;
+        font-weight: 600;
+        max-width: 370px !important;
+        padding: 5px 0 20px 0;
+    }
+}
+
+.product-desc-title {
+    font-family: "OutfitRegular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-align: center;
+}
+
+.jewelry-categories-section {
+    background-color: #F4F4F4;
+    margin: 20px 0;
+
+    .jewelry-categories {
+        font-family: 'OutfitRegular';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 30px;
+        cursor: pointer;
+        text-align: center;
+        color: #A9A9A9;
+        padding: 26px 0;
+    }
+
+    .jewelry-categories.isActive {
+        color: #212121;
+    }
+}
+
+.jwellery-category {
+    .category-head {
+
+        h1 {
+            font-size: 130px;
+            font-weight: 900 !important;
+            color: #212121;
+            opacity: 0.03999999910593033;
+            text-transform: uppercase;
+            font-family: 'OutfitBold' !important;
+            height: 140px;
+        }
+
+        p {
+            font-size: 48px;
+            color: #212121;
+            font-family: 'OutfitRegular' !important;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.explore-slider {
+    max-width: 1440px;
+    width: 100%;
+    height: 380px !important;
+
+    .slider-box {
+        height: 337.389px;
+    }
+
+    .slider-img {
+        background-color: #F3F3F3 !important;
+        max-height: 337.389px;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+
+    button.slick-arrow.slick-next,
+    button.slick-arrow.slick-prev {
+        border: 2px solid #959595 !important;
+        border-radius: 50% !important;
+        max-width: 45px;
+        width: 100%;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .slick-next:before,
+    .slick-prev:before {
+        content: "";
+        background-image: url("../../../../assets/images/svg/right-slider-arrow.svg");
+        width: 27px;
+        height: 50%;
+        display: inline-block;
+        background-repeat: no-repeat;
+    }
+
+    .slick-next:before {
+        background-image: url("../../../../assets/images/svg/left-slider.svg");
+    }
+
+
+    button.slick-arrow.slick-prev,
+    button.slick-arrow.slick-next {
+        position: absolute;
+        left: 93% !important;
+        right: 0;
+        top: -40px !important;
+    }
+
+
+    button.slick-arrow.slick-next {
+        left: 100% !important;
+    }
+
+    .slider-content-txt {
+        color: #212121;
+        font-size: 19.741px;
+        font-family: "OutfitRegular" !important;
+        font-weight: 300 !important;
+        margin-top: 5px;
+    }
+}
+
+.explore-content {
+    color: #212121;
+    font-size: 30px !important;
+    font-family: "OutfitRegular" !important;
+}
+
+.head-content {
+    color: #212121;
+    text-align: center;
+    font-size: 44px;
+    font-family: "OutfitRegular";
+
+    @media (max-width:768px) {
+        font-size: 34px;
+
+    }
+}
+
+.margin-top {
+    padding-top: 220px;
+}
+
+.jwellery-showcase {
+
+    .tab-wrap {
+        background: #F4F4F4;
+        padding: 27px 71px;
+        max-width: 1126px;
+        width: 100%;
+        margin: 111px auto;
+        overflow: auto;
+
+        @media (max-width:768px) {
+            margin: 60px auto;
+            padding: 30px 40px;
+            white-space: nowrap;
+
+        }
+
+
+        p {
+            color: #A9A9A9;
+            text-align: center;
+            font-size: 24px;
+
+            @media (max-width:768px) {
+                font-size: 16px;
+                margin-right: 20px;
+            }
+
+            &.active {
+                color: #212121;
+                font-family: "OutfitRegular";
+            }
+        }
+    }
+
+    .tab-content {
+        margin: 67px 0 0;
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 29px 15px;
+
+            @media (max-width:1400px) {
+                grid-template-columns: repeat(4, 1fr);
+
+            }
+
+            @media (max-width:1024px) {
+                grid-template-columns: repeat(3, 1fr);
+
+            }
+
+            @media (max-width:768px) {
+                grid-template-columns: repeat(2, 1fr);
+
+            }
+
+            @media (max-width:576px) {
+                grid-template-columns: repeat(1, 1fr);
+
+            }
+        }
+
+        .box {
+            background-color: #F3F3F3;
+            padding: 18px;
+            height: 337.39px !important;
+
+            .box-title {
+                position: absolute;
+                top: 18px;
+                width: calc(100% - 36px) !important;
+                left: 18px;
+                right: 18px;
+            }
+
+            p {
+                color: #2B2B2B;
+                font-size: 10px;
+                font-weight: 800 !important;
+            }
+
+            .icon-color {
+                color: #2B2B2B !important;
+                width: 14px !important;
+            }
+        }
+
+        .box-bottom-content {
+            p {
+                color: #212121;
+                text-align: center;
+                font-size: 14px;
+                font-family: 'Outfitregular' !important;
+                font-weight: 400 !important;
+
+                &:last-child {
+                    font-weight: 300 !important;
+                    font-family: 'Outfit', sans-serif !important;
+                    color: #212121;
+                }
+            }
+        }
+    }
+}
+
+.box-bottom-btn {
+    margin-top: 8.61px;
+
+    li {
+        margin-right: 17px;
+
+        &:last-child {
+            margin-right: 0 !important;
+        }
+
+        &.border-around {
+            border: 1px solid #656565;
+            border-radius: 24px;
+        }
+    }
+}
+
+.jwelry-description {
+    padding-top: 266px !important;
+
+    .black-text {
+        color: #212121;
+        font-size: 30px;
+        font-family: "OutfitRegular";
+        line-height: 45px;
+    }
+
+    .icon-wrap {
+        min-width: 50px;
+    }
+
+    .contact-detail {
+        max-width: 120px;
+        width: 100%;
+        // margin: 0 auto;
+    }
+
+    .accordion .accordion-header .accordion-button {
+        font-family: "OutfitRegular" !important;
+        color: #656565;
+        font-size: 24px;
+        max-width: 300px !important;
+    }
+
+    .accordion-drop-text {
+        max-width: 170px;
+        width: 100%;
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        background-image: url("../FE/images/down-arrow.svg") !important;
+    }
+
+    .accordion-button::after {
+        background-image: url("../FE/images/up-arrow.svg") !important;
+    }
+}
